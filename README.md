@@ -3,7 +3,9 @@
 Dynamic radiance field reconstruction methods aim to model the time-varying structure and appearance of a dynamic scene. Existing methods, however, assume that accurate camera poses can be reliably estimated by Structure from Motion (SfM) algorithms. These methods, thus, are unreliable as SfM algorithms often fail or produce erroneous poses on challenging videos with highly dynamic objects, poorly textured surfaces, and rotating camera motion. We address this robustness issue by jointly estimating the static and dynamic radiance fields along with the camera parameters (poses and focal length). We demonstrate the robustness of our approach via extensive quantitative and qualitative experiments. Our results show favorable performance over the state-of-the-art dynamic view synthesis methods.
 
 ### [Project page](https://robust-dynrf.github.io/) | [arXiv](https://arxiv.org/abs/2301.02239) | [Video](https://www.youtube.com/watch?v=38S56ottFQ4) | [Supp](https://openaccess.thecvf.com/content/CVPR2023/supplemental/Liu_Robust_Dynamic_Radiance_CVPR_2023_supplemental.pdf) | [Evaluation Results](https://drive.google.com/file/d/1GzO2AEWE2azibt3XtriOHdRFj3LFPTa6/view?usp=share_link)
-[Yu-Lun Liu](https://www.cmlab.csie.ntu.edu.tw/~yulunliu), 
+
+> **Robust Dynamic Radiance Fields**<br>
+> [Yu-Lun Liu](https://www.cmlab.csie.ntu.edu.tw/~yulunliu), 
 [Chen Gao](http://chengao.vision), 
 [Andreas Meuleman](https://ameuleman.github.io), 
 [Hung-Yu Tseng](https://hytseng0509.github.io/), 
@@ -12,6 +14,7 @@ Dynamic radiance field reconstruction methods aim to model the time-varying stru
 [Yung-Yu Chuang](https://www.csie.ntu.edu.tw/~cyy/), 
 [Johannes Kopf](http://johanneskopf.de),
 [Jia-Bin Huang](https://jbhuang0604.github.io)
+in CVPR 2023 <br>
 
 ## Setup
 Tested with PyTorch 2.0 and CUDA 11.7.
