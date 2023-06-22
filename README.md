@@ -13,7 +13,7 @@ Dynamic radiance field reconstruction methods aim to model the time-varying stru
 [Changil Kim](https://changilkim.com), 
 [Yung-Yu Chuang](https://www.csie.ntu.edu.tw/~cyy/), 
 [Johannes Kopf](http://johanneskopf.de),
-[Jia-Bin Huang](https://jbhuang0604.github.io)
+[Jia-Bin Huang](https://jbhuang0604.github.io) <br>
 in CVPR 2023 <br>
 
 ## Setup
