@@ -1,0 +1,51 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+dataset_name = nvidia
+datadir = dataset/Nvidia/Playground
+expname =  Playground
+basedir = log
+
+downsample_train = 2.0
+ray_type = ndc
+with_GT_poses = 1
+step_ratio = 2.0
+
+N_voxel_t = 12  # need to match the number of time steps
+n_iters = 100000
+batch_size = 1024
+
+N_voxel_init = 2097156 # 128**3
+N_voxel_final = 27000000 # 300**3
+upsamp_list = [8000,12000,16000,22000]
+update_AlphaMask_list = [300000000]
+
+N_vis = -1 # vis all testing images
+vis_every = 1000000
+vis_train_every = 5000
+progress_refresh_rate = 1000
+
+render_test = 1
+render_path = 1
+
+model_name = TensorVMSplit_TimeEmbedding
+n_lamb_sigma = [16, 4, 4]
+n_lamb_sh = [48, 12, 12]
+
+shadingMode = MLP_Fea_late_view
+shadingModeStatic = MLP_Fea
+fea2denseAct = relu
+
+view_pe = 0
+fea_pe = 0
+
+TV_weight_density = 1.0
+TV_weight_app = 1.0
+distortion_weight_static = 0.0
+distortion_weight_dynamic = 0.01
+
+optimize_poses = 0
+use_time_embedding = 0
+multiview_dataset = 0
+
+use_foreground_mask = motion_masks
+use_disp = 1

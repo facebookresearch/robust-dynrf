@@ -1,0 +1,56 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
+dataset_name = davis
+datadir = dataset/DAVIS_1080p/horsejump-high
+expname =  horsejump-high
+
+basedir = log
+
+downsample_train = 2.0
+ray_type = contract
+with_GT_poses = 0
+optimize_focal_length = 1
+step_ratio = 2.0
+
+N_voxel_t = 50 # need to match the number of time steps
+n_iters = 100000
+batch_size = 1024
+
+N_voxel_init = 4096 # 16**3
+N_voxel_final = 16777216 # 256**3
+upsamp_list = [2000, 4000, 6000, 8000, 12000, 16000, 22000]
+update_AlphaMask_list = [300000000]
+
+N_vis = -1 # vis all testing images
+vis_every = 1000000
+vis_train_every = 8000000
+progress_refresh_rate = 10000
+
+render_test = 1
+render_path = 1
+
+model_name = TensorVMSplit_TimeEmbedding
+n_lamb_sigma = [16, 4, 4]
+n_lamb_sh = [48, 12, 12]
+
+shadingMode = MLP_Fea_late_view
+fea2denseAct = relu
+
+view_pe = 0
+fea_pe = 6
+
+L1_weight_inital = 8e-5
+TV_weight_density = 0.0
+TV_weight_app = 0.0
+TV_weight_density = 0.1
+TV_weight_app = 0.01
+distortion_weight_static = 0.04
+distortion_weight_dynamic = 0.02
+distortion_weight_static = 0.02
+distortion_weight_dynamic = 0.005
+monodepth_weight_static = 0.04
+
+optimize_poses = 1
+
+use_foreground_mask = epipolar_error_png
+use_disp = 1
