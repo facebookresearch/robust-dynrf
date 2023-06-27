@@ -19,8 +19,8 @@ in CVPR 2023 <br>
 ## Setup
 Tested with PyTorch 2.0 and CUDA 11.7.
 ```
-git clone --recursive https://github.com/facebookresearch/RoDynRF
-cd RoDynRF
+git clone --recursive https://github.com/facebookresearch/robust-dynrf
+cd robust-dynrf
 conda create -n RoDynRF python=3.8 -y
 conda activate RoDynRF
 pip install torch torchvision
