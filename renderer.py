@@ -485,7 +485,7 @@ def render(
                 ray_type=ray_type,
             )
             # scene flow
-            scene_flow_f, scene_flow_b = tensorf.module.get_forward_backward_scene_flow(
+            scene_flow_f, scene_flow_b = tensorf.get_forward_backward_scene_flow(
                 pts_ref, ts_chunk
             )
             pts_f = pts_ref + scene_flow_f
